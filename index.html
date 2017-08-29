@@ -13,10 +13,9 @@
 
 				$.ajax({
 				  url: url,
-				  dataType: "jsonp",
+				  dataType: "text",
 				  success: function (data) {
-					console.log(data)
-					alert(data);
+					console.log(data.lenght);
 				  }
 				});
 			});
