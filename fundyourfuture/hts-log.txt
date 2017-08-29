@@ -1,0 +1,16 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 28 Aug 2017 12:47:13 at https://fundyourfuture.jpmorgan.com/es/es/adviser/2/#home +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://fundyourfuture.jpmorgan.com/es/es/adviser/2/#home -O1 "C:\Users\josev\Downloads\fundyourfuture.jpmorgan" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:47:48	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link primary/robots.txt (from primary/primary)
+12:47:48	Warning: 	Retry after error -5 (Unable to get server's address: Host desconocido. ) at link primary/home (from primary/primary)
+12:47:52	Error: 	"Bad Request" (400) at link www.googletagmanager.com/gtm.js?id= (from https://fundyourfuture.jpmorgan.com/es/es/adviser/2/)
+12:47:52	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link primary/home (from primary/primary)
+12:47:54	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link primary/home (from primary/primary)
+
+HTTrack Website Copier/3.49-2 mirror complete in 41 seconds : 50 links scanned, 44 files written (1615951 bytes overall) [963149 bytes received at 23491 bytes/sec], 964300 bytes transferred using HTTP compression in 21 files, ratio 29%, 9.2 requests per connection
+(3 errors, 2 warnings, 0 messages)
