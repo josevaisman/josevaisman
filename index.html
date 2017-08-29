@@ -1,32 +1,27 @@
-<html>
-<head>
-</head>
-<body>  
-  <script type="text/JavaScript">
-  
-	function httpGet(theUrl)
-	{
-		if (window.XMLHttpRequest)
-		{// code for IE7+, Firefox, Chrome, Opera, Safari
-			xmlhttp=new XMLHttpRequest();
-		}
-		else
-		{// code for IE6, IE5
-			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-		}
-		xmlhttp.onreadystatechange=function()
-		{
-			if (xmlhttp.readyState==4 && xmlhttp.status==200)
-			{
-				return xmlhttp.responseText;
-			}
-		}
-		xmlhttp.open("GET", theUrl, false );
-		xmlhttp.send();    
-	}
-  document.write(httpGet("https://github.com/josevaisman/josevaisman.github.io"));
-  </script>
-</body>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title></title>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    </head>
+    <body>
+
+        <script type="text/javascript" >
+			$(document).ready(function () {
+            var url = "https://github.com/josevaisman/josevaisman.github.io";
+
+				$.ajax({
+				  url: url,
+				  dataType: "jsonp",
+				  success: function (data) {
+					console.log(data)
+					alert(data);
+				  }
+				});
+			});
+
+        </script>
+
+    </body>
 </html>
-
-
